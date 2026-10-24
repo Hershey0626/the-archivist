@@ -95,7 +95,7 @@ SQL-as-gameplay has a proud history, notably the Knight Lab's *SQL Murder Myster
 
 ## Design Notes
 
-The setting, recurring motifs, and hidden story are documented in [`docs/LORE.md`](docs/LORE.md). **It contains spoilers.**
+The setting, recurring motifs, and hidden story are documented in [`docs/LORE.md`](LORE.md). **It contains spoilers.**
 
 ## License
 
