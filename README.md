@@ -8,7 +8,7 @@ A SQL detective game with a quiet, corporate-horror atmosphere. You are the newl
 
 ## Premise
 
-You have been hired for a three-week project at the Library of Alexandria. The task is routine. The Archive is replacing its old novels, shelved alphabetically by author, with a new collection, catalogued alphabetically by title. Someone has to reconcile the two lists, flag discrepancies, and sign off. That someone is you.
+You have been hired for a three-week project at the Library of Archives. The task is routine. The Archive is replacing its old novels, shelved alphabetically by author, with a new collection, catalogued alphabetically by title. Someone has to reconcile the two lists, flag discrepancies, and sign off. That someone is you.
 
 You will never meet the staff. They are called Custodians, never employees, and the only contact you are permitted is ten messages per day. Directives arrive from The Office of Continuity, which sends memos but never signs them. Your inbox pings every five seconds. Some emails vanish before you can open them.
 
