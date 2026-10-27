@@ -100,3 +100,54 @@ The setting, recurring motifs, and hidden story are documented in [`docs/LORE.md
 ## License
 
 MIT
+
+```mermaid
+classDiagram
+    class Case {
+        <<abstract>>
+        +int case_id
+        +int seed
+        +int difficulty
+        +int week
+        +generate_attack(conn)*
+        +describe() str
+        +check_answer(user_id) bool
+    }
+    class BruteForceCase
+    class PhishingCase
+    class InsiderExfilCase
+    Case <|-- BruteForceCase
+    Case <|-- PhishingCase
+    Case <|-- InsiderExfilCase
+
+    class CaseFactory {
+        +create(week, seed) Case
+    }
+    CaseFactory ..> Case : creates
+
+    class LogGenerator {
+        +generate_normal_traffic(conn, seed)
+    }
+    Case ..> LogGenerator : uses
+
+    class Detector {
+        <<interface>>
+        +score(events) list
+    }
+    class RuleBasedDetector
+    class AutoencoderDetector
+    Detector <|.. RuleBasedDetector
+    Detector <|.. AutoencoderDetector
+
+    class Player {
+        +int day
+        +int actions_left
+        +spend(cost) bool
+    }
+    class Game {
+        +run()
+    }
+    Game --> Player
+    Game --> CaseFactory
+    Game --> Detector
+```
